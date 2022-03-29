@@ -1,0 +1,13 @@
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    margin-top: 5px;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+}

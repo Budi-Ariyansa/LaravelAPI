@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transkrip Nilai</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Ropa Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-flex">
+        <nav class="navbar navbar-default" style="background-color: #5E7CE7;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="../img/logo.png" alt="LogoUksw" width="50px" height="50px">
+                        </div>
+                        <div class="col my-auto">
+                            <h3 class="text-white"><b>Universitas Kristen Satya Wacana</b></h3>
+                        </div>
+                    </div>                                     
+                </div>
+                <button class="btn btn-danger" onclick="logout('siswa')">Log Out</button>
+            </div>
+        </nav>
+        <div class="row m-0">
+            <div class="col-md-2">
+                <div class="sidebar rounded mt-3" style="background-color: #C4C4C4;height: 100%;">
+                    <br><br>
+                    <center>
+                        <img src="../img/profile.png" alt="Profile" width="100px" height="100px"><br><br>
+                        <p><b id="profile"></b></p>
+                    </center>
+                    <ul class="pl-2">
+                        <li><a href="../Siswa/beranda-siswa.html"><span class="iconify" data-icon="ant-design:home-outlined"></span> HOME</a></li>
+                        <li><a href="../Siswa/registrasi-ulang.html"><span class="iconify" data-icon="carbon:repeat"></span> REGISTRASI ULANG</a></li>
+                        <li><a href="../Siswa/registrasi-matakuliah.html"><span class="iconify" data-icon="healthicons:register-book-outline"></span> REGISTRASI MATAKULIAH</a></li>
+                        <li><a href="../Siswa/request-matkul.html"><span class="iconify" data-icon="healthicons:register-book-outline"></span> REQUEST MATAKULIAH</a></li>
+                        <li><a href="../Siswa/kst.html"><span class="iconify" data-icon="bi:card-checklist"></span> KARTU STUDI</a></li>
+                        <li><a href="../Siswa/jadwal-siswa.html"><span class="iconify" data-icon="clarity:list-line"></span> JADWAL KULIAH</a></li>
+                        <li><a href="../Siswa/transkrip_nilai.html"><span class="iconify" data-icon="healthicons:i-exam-qualification-outline"></span> TRANSKIP NILAI</a></li>
+                        <li><a href="../Siswa/tagihan.html"><span class="iconify" data-icon="la:file-invoice-dollar"></span> TAGIHAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 pl-0">
+                <div class="content rounded mt-3 p-3" style="background-color: #C4C4C4;height: 100%;"><br>
+                    <h2><b>Transkrip Nilai</b></h2><br><br>
+                    <form id="form-registrasi-ulang">
+                        <div class="row align-items-center">
+                            <table class="table table-bordered m-3">
+                                <thead>
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>KODE</th>
+                                        <th>MATAKULIAH</th>
+                                        <th>SKS</th>
+                                        <th>NILAI</th>
+                                        <th>AK</th>
+                                        <th>TAHUN AMBIL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td ><a href=""></a>1</td>
+                                        <td><a href="">IN 123</a></td>
+                                        <td><a href=""></a>SISTEM TERDISTRIBUSI</td>
+                                        <td><a href=""></a>4</td>
+                                        <td><a href=""></a>A</td>
+                                        <td><a href=""></a>16</td>
+                                        <td><a href=""></a>2021-2022/2</td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td ><a href=""></a>1</td>
+                                        <td><a href="">IN 123</a></td>
+                                        <td><a href=""></a>SISTEM TERDISTRIBUSI</td>
+                                        <td><a href=""></a>4</td>
+                                        <td><a href=""></a>A</td>
+                                        <td><a href=""></a>16</td>
+                                        <td><a href=""></a>2021-2022/2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                </div>           
+            </div>
+    </div>
+    <script src="../js/script-siswa.js"></script>
+</body>
+</html>
